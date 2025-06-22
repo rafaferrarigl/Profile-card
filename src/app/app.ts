@@ -1,12 +1,15 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [FormsModule],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
 export class App {
-  protected title = 'profile-card';
+  name: string = 'Rafael Ferrari';
+  age: number = 23;
+  description: string = 'I am a software engineer with a passion for web development and open source contributions.';
 }
